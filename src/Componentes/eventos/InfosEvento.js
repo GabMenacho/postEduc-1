@@ -8,7 +8,7 @@ export default class InfosEvento extends React.Component{
             return(
                 <div>
     
-                     <p>Postado dia: {this.props.data} às {this.props.hora}</p><Pop/>
+                     <h6>Postado dia: {this.props.data} às {this.props.hora}</h6><Pop/>
                     <img src={`http://52.67.245.155/php/img/${this.props.imagem}`} alt='imagem' title='titulo' width="600px" height="400px"/>
     
                 </div>
@@ -18,7 +18,7 @@ export default class InfosEvento extends React.Component{
             return(
                 <div>
 
-                    <b>Evento Verificado</b><br/>
+                    <b>Verificado</b><br/>
                     <img src={`http://52.67.245.155/php/img/${this.props.imagem}`} alt='imagem' title='titulo' width="600px" height="400px"/>
 
                 </div>

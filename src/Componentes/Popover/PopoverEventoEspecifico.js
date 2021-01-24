@@ -1,4 +1,5 @@
-import { Popover, OverlayTrigger, Button } from 'react-bootstrap'
+import { Popover, OverlayTrigger, Button, Image } from 'react-bootstrap'
+import aviso from '../../Img/icone_aviso.png'
 
 
 
@@ -13,7 +14,7 @@ const popover = (
 
 const PopoverEventoEspecifico = () => (
     <OverlayTrigger trigger="click" placement="right" overlay={popover}>
-        <Button className="my-2" variant="warning" size="sm" block><strong>Aviso.</strong></Button>
+        <Button className="my-2 float-right" variant="white" size="sm"><strong><Image src={aviso}></Image></strong></Button>
     </OverlayTrigger>
 );
 

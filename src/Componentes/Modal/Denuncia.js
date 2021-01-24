@@ -1,8 +1,10 @@
 import React from 'react';
-import {Button, Modal, Form} from 'react-bootstrap';
+import {Button, Modal, Form, Image} from 'react-bootstrap';
 
 import Checkbox from '../../Componentes/Checkbox/Checkbox';
 import { connect } from 'react-redux';
+
+import denuncia from '../../Img/denuncia.png'
 
 const itens = [
 	' conteúdo sexual / impróprio',
@@ -96,8 +98,9 @@ class Denuncia extends React.Component {
 
 		return (
 			<>
-				<Button variant="danger" onClick={this.handleShow}>
-					Denunciar
+				<Button variant="white" className="float-right" onClick={this.handleShow}>
+					<Image src={denuncia}>
+					</Image>
 				</Button>
 
 				<Modal show={this.state.show} onHide={this.handleClose}>
